@@ -3,10 +3,17 @@
 # INSTALLING APPS NEEDED
 
 #sudo apt update
-#sudo apt install -y firefox-esr bspwm sxhkd kitty fonts-dejavu-core git jq curl rofi feh gh ninja-build libmpdclient-dev libxcb-util0-dev xcb-proto libxcb-composite0-dev libpulse-dev libiw-dev libcurl4-openssl-dev libasound2-dev cmake build-essential python3-sphinx libuv1-dev libuv1 libx11-dev libxcb-randr0-dev libxcb-xinerama0-dev libxcb1-dev libxcb-util0-dev libx11-xcb-dev libxcb-damage0-dev libxcb-glx0-dev libxcb-present-dev libxcb-sync-dev libxi-dev libxrandr-dev python3 python3-pip python3-setuptools python3-wheel python3-xcbgen
+#sudo apt install -y firefox-esr bspwm sxhkd imagemagick zsh kitty fonts-dejavu-core git jq curl rofi feh gh ninja-build libmpdclient-dev libxcb-util0-dev xcb-proto libxcb-composite0-dev libpulse-dev libiw-dev libcurl4-openssl-dev libasound2-dev cmake build-essential python3-sphinx libuv1-dev libuv1 libx11-dev libxcb-randr0-dev libxcb-xinerama0-dev libxcb1-dev libxcb-util0-dev libx11-xcb-dev libxcb-damage0-dev libxcb-glx0-dev libxcb-present-dev libxcb-sync-dev libxi-dev libxrandr-dev python3 python3-pip python3-setuptools python3-wheel python3-xcbgen mpd mpc
 #mkdir $HOME/.config/bspwm && mkdir $HOME/.config/sxhkd && mkdir $HOME/.config/buildsrc
+# pip install pywall --break-system-packages
 #git clone https://github.com/neovim/neovim $HOME/.config && cd $HOME/.config && git checkout stable && cd -
 
+# INSTALLING NERD FONTS.
+#
+# mkdir -p "$HOME/.local/share/fonts"
+# wget -P "$HOME/.local/share/fonts" https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+# unzip JetBrainsMono.zip -d "$HOME/.local/share/fonts/"
+#
 # GIT CLONE WALLPAPER FOLDER INTO THE PICTURES FOLDER.
 #git clone https://github.com/2lazyyy/walls.git $HOME/Pictures
 
@@ -21,6 +28,9 @@
 #
 #make CMAKE_BUILD_TYPE=RelWithDebInfo
 #sudo make install && cd "$HOME"
+
+#BUILDING POLYBAR FROM SOURCE.
+
 #if [! -d "$HOME/.config/buildsrc/polybar"]; then
 #	git clone https://github.com/polybar/polybar.git "$HOME/.config/buildsrc/polybar"
 #fi
@@ -28,7 +38,7 @@
 #bash "$HOME/.config/buildsrc/polybar/build.sh"
 
 # REPLACE THIS LINE WITH MY ACTUAL GITHUB CONFIG.
-#cp /usr/share/doc/bspwm/examples/sxhkdrc $HOME/.config/sxhkd && cp /usr/share/doc/bspwm/examples/bspwmrc $HOME/.config/bspwm
+#git clone https://github.com/2lazyyy/dotfiles.git "$HOME/.cofig" && mv * "$HOME/.config/dotfiles/" $HOME/.config
 
 #chmod +x $HOME/.config/bspwm/bspwmrc && chmod +x $HOME/.config/sxhkd/sxhkdrc
 #git clone https://github.com/13-CF/afetch.git $HOME/.config && sudo make clean install -C $HOME/.config/afetch
@@ -70,18 +80,8 @@
 #sudo sed -i 's/^#\?HandleLidSwitchDocked=.*/HandleLidSwitchDocked=ignore/' /etc/systemd/logind.conf
 #sudo systemctl restart systemd-logind
 
-
-
-
-
-
-
-
-
-
 # to-do list
 
-# troubleshoot slstatus
 # pull down the wallpapers, slstatus config, bspwm config and shhkd from my github.
 # configure kitty terminal.
 # configure rofi and picom (for transparent terminal).
