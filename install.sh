@@ -35,7 +35,7 @@
 
 #bash "$HOME/.config/buildsrc/polybar/build.sh"
 
-# REPLACE THIS LINE WITH MY ACTUAL GITHUB CONFIG.
+# GETTING DOTFILES.
 #git clone https://github.com/2lazyyy/dotfiles.git "$HOME/.cofig" && mv * "$HOME/.config/dotfiles/" $HOME/.config
 
 #chmod +x $HOME/.config/bspwm/bspwmrc && chmod +x $HOME/.config/sxhkd/sxhkdrc
@@ -80,8 +80,6 @@
 
 # to-do list
 
-# pull down the wallpapers, slstatus config, bspwm config and shhkd from my github.
-# configure kitty terminal.
 # configure rofi and picom (for transparent terminal).
 # configure zsh.
 # reboot
