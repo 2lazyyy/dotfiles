@@ -5,7 +5,6 @@
 #sudo apt update
 #sudo apt install -y firefox-esr bspwm sxhkd imagemagick zsh kitty fonts-dejavu-core git jq curl rofi feh gh ninja-build libmpdclient-dev libxcb-util0-dev xcb-proto libxcb-composite0-dev libpulse-dev libiw-dev libcurl4-openssl-dev libasound2-dev cmake build-essential python3-sphinx libuv1-dev libuv1 libx11-dev libxcb-randr0-dev libxcb-xinerama0-dev libxcb1-dev libxcb-util0-dev libx11-xcb-dev libxcb-damage0-dev libxcb-glx0-dev libxcb-present-dev libxcb-sync-dev libxi-dev libxrandr-dev python3 python3-pip python3-setuptools python3-wheel python3-xcbgen mpd mpc
 #mkdir $HOME/.config/bspwm && mkdir $HOME/.config/sxhkd && mkdir $HOME/.config/buildsrc
-# pip install pywall --break-system-packages
 #git clone https://github.com/neovim/neovim $HOME/.config && cd $HOME/.config && git checkout stable && cd -
 
 # INSTALLING NERD FONTS.
